@@ -1,9 +1,9 @@
 *{
     margin: 0 auto;
-    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: Arial, Helvetica, sans-serif; 
 }
 
-/*ENCABEZADO */
+
 #encabezado{
     display: flex;
     margin: 13px 0 ;    
@@ -15,10 +15,18 @@
     width: 27%;
     list-style: none;
 }
+
 #menu li a{
-    color: rgb(155, 153, 153);
+    color:  rgb(65, 64, 64);
+    text-decoration: none;
+
 }
-#btnmenu{
+#menu li a:hover{
+    color: aqua;
+
+}
+
+#buttonmenu{
 
     padding: 13px 25px;
     background-color:rgb(0, 194, 194);
@@ -26,14 +34,14 @@
     color: azure;
     font-weight:700;
 }
-#menu li a:hover{
-  color: rgb(65, 64, 64);
-}
-#btnmenu:hover{
+
+  
+
+#buttonmenu:hover{
     background-color: rgb(118, 247, 247);
 }
 
-/* INICIO CENTRO */
+
 #cabsup{
     background-color:rgb(250, 250, 250);
     padding: 150px 0;
@@ -59,7 +67,7 @@
 #cabsup #texto{
     margin-left: 150px;
 }
-#btncontent{
+#buttoncontent{
 
     padding: 13px 25px;
     background-color:rgb(0, 194, 194);
@@ -67,7 +75,7 @@
     color: azure;
 
 }
-#btncontent:hover{
+#buttoncontent:hover{
     background-color: rgb(118, 247, 247);
 }
 #content #centro{
@@ -115,38 +123,44 @@
     margin-right: 30px;
     background-color: white;
     width: 50%;
+    
+
+}
+#texto a{
+    text-decoration: none;
 
 }
 .card #img img {
     width: 100%;
 
 }
-#tx #pr{
+#texto #pr{
     margin: 20px ;
     color: rgb(120, 120, 120);
     font-size: 10px;
 }
-#tx h3 a{
+#texto h3 a{
 
     color: rgb(107, 106, 106);
     font-weight: 100;
 
 }
-#tx h3 a:hover{
+#texto h3 a:hover{
     color:rgb(0, 194, 194) ;
 }
-#tx h3{
+#texto h3{
     margin: 0 20px;
 }
-#tx p{
+#texto p{
     margin: 20px ;
     color: rgb(120, 120, 120);
     font-size: 14px;
 }
+
 #container footer{
     background-color: #2D314E;
 }
-/* INICIO FOOTER */
+
 footer{
     display: flex;
 }
@@ -158,21 +172,21 @@ footer #izquierda{
     margin-bottom: 50px;
 
 }
-footer #mitad1{
+footer #mit1{
     margin: 40px 62px;
 
 
 }
-#mitad1 li a {
+#mit1 li a {
 
     line-height: 35px;
     color: rgb(172, 172, 172);
 }
-footer #mitad2{
+footer #mit2{
     margin: 40px 90px;
 
 }
-#mitad2 li a {
+#mit2 li a {
 
     line-height: 35px;
     color: rgb(172, 172, 172);
@@ -202,9 +216,9 @@ footer #derecha{
 }
 
 
-/* RESPONSIVE */
-@media (max-width:480px){
 
+@media (max-width:480px)
+{
     #hamburger,#close{
         display: block;
         position: absolute;
@@ -216,7 +230,7 @@ footer #derecha{
         z-index: 10;
     }
 
-    #btnmenu{
+    #buttonmenu{
         display: none;
 
     }
@@ -246,10 +260,10 @@ footer #derecha{
         margin-bottom: 70px;
         margin-top: 800px;
         box-sizing: border-box;
+        text-decoration: none;
     }
-    /* #infe .card{
-        flex-direction: column;
-    } */
+    
+    
     #centro #cent{
         flex-direction: column;
     }
